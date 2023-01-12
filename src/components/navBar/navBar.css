@@ -1,0 +1,36 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs {
+  display: flex;
+  
+}
+
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background-color: #feffdf;
+}
+
+
+.first-color { 
+	background: #feffdf; 
+}
+	
+.second-color { 
+	background: #dde0ab; 
+}
+
+.third-color { 
+	background: #97cba9; 
+}
+
+.fourth-color { 
+	background: #668ba4; 
+}

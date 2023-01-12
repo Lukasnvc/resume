@@ -1,0 +1,37 @@
+.container{
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  font-size: 0.6rem;
+  margin: 5px;
+}
+
+.fa-github {
+  margin: 3px;
+  cursor: pointer;
+}
+
+.fa-github:hover {
+  color: #feffdf;
+}
+
+.first-color { 
+	background: #feffdf; 
+}
+	
+.second-color { 
+	background: #dde0ab; 
+}
+
+.third-color { 
+	background: #97cba9; 
+}
+
+.fourth-color { 
+	background: #668ba4; 
+}
