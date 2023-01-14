@@ -58,8 +58,8 @@ const SkillsPage = () => {
               <span>2022 summer</span>
               <p>
                 Started learning Programming basics CSS, HTML, JavaScript
-                reading w3schools, developer.mozilla.org documentations and
-                doing toturials, thats where I got hooked up
+                reading developer.mozilla.org, w3schools documentations and
+                doing toturials, thats where I got hooked up.
               </p>
             </li>
             <li>

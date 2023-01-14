@@ -13,6 +13,11 @@
   margin-left: 5px;
   color: #B8E1DD;
 }
+@media screen and (max-width: 800px) {
+  .nav-container .logo {
+    display: none;
+  }
+}
 .nav-container .logo .logo-text {
   margin-left: 1px;
   font-size: 0.5rem;
@@ -27,6 +32,11 @@
   color: #B8E1DD;
   font-family: "VT323", monospace;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 800px) {
+  .nav-container .tabs .tab {
+    padding: 10px 15px;
+  }
 }
 .nav-container .tabs .tab:hover {
   background-color: #044A42;

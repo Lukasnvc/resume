@@ -12,6 +12,9 @@
     padding: 7px;
     margin-left: 5px;
     color: #B8E1DD;
+    @media screen and (max-width: 800px) {
+      display: none;
+      }
 
     .logo-text {
       margin-left: 1px;
@@ -29,6 +32,9 @@
       color: #B8E1DD;
       font-family: 'VT323', monospace;
       font-size: 1.2rem;
+      @media screen and (max-width: 800px) {
+        padding: 10px 15px;
+        }
     }
     
     .tab:hover {

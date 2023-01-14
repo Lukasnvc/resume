@@ -46,7 +46,6 @@
   .main-container .right {
     width: 100vw;
     padding: 20px 0;
-    margin: 0 40px;
   }
 }
 .main-container .right .title-detail {
@@ -54,8 +53,14 @@
   text-align: center;
 }
 .main-container .right ul {
+  padding: 0;
   line-height: 1.5;
-  margin: 0 60px;
+  margin: 0 70px;
+}
+@media screen and (max-width: 800px) {
+  .main-container .right ul {
+    margin: 0 40px;
+  }
 }
 .main-container .right ul li {
   margin: 40px auto;
@@ -68,5 +73,5 @@
 }
 .main-container .right ul li p {
   font-family: "Roboto Condensed", sans-serif;
-  text-indent: 20px;
+  text-indent: 50px;
 }/*# sourceMappingURL=skillsPage.css.map */
