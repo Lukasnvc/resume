@@ -13,7 +13,7 @@
   margin-left: 5px;
   color: #B8E1DD;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 530px) {
   .nav-container .logo {
     display: none;
   }
@@ -33,7 +33,7 @@
   font-family: "VT323", monospace;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
   .nav-container .tabs .tab {
     padding: 10px 15px;
   }
