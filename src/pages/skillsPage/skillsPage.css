@@ -1,33 +1,72 @@
 .main-container {
   display: flex;
+  width: 100vw;
+  height: 100vh;
   font-family: "VT323", monospace;
+}
+@media screen and (max-width: 800px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .main-container .left {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100%;
+  align-items: stretch;
   background-color: #126258;
+  width: 50vw;
+}
+@media screen and (max-width: 800px) {
+  .main-container .left {
+    width: 100vw;
+  }
 }
 .main-container .left .title {
   text-align: center;
   color: #97cba9;
   font-weight: 400;
   font-size: 2rem;
-  margin: 40px auto;
+  margin: 60px auto;
 }
 .main-container .left .skills {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 .main-container .right {
-  font-family: "Roboto Condensed", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
   background-color: #B8E1DD;
+  color: #126258;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 50vw;
+}
+@media screen and (max-width: 800px) {
+  .main-container .right {
+    width: 100vw;
+    padding: 20px 0;
+    margin: 0 40px;
+  }
+}
+.main-container .right .title-detail {
+  margin-top: 50px;
+  text-align: center;
+}
+.main-container .right ul {
+  line-height: 1.5;
+  margin: 0 60px;
+}
+.main-container .right ul li {
+  margin: 40px auto;
+  list-style-type: none;
+}
+.main-container .right ul li span {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.main-container .right ul li p {
+  font-family: "Roboto Condensed", sans-serif;
+  text-indent: 20px;
 }/*# sourceMappingURL=skillsPage.css.map */
