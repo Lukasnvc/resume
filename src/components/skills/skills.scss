@@ -1,0 +1,29 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  .skill-item {
+    width: 340px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .fa-brands {
+      font-size: 3rem;
+      color: #97cba9;
+    }
+
+    span {
+      margin-left: 10px;
+      font-family: 'VT323', monospace;
+      color: #B8E1DD
+    }
+
+    .fa-solid, .fa-star {
+      color: #B8E1DD;
+    }
+  }
+}

@@ -1,37 +1,22 @@
-.container{
+.container {
   position: fixed;
   bottom: 0px;
   width: 100vw;
   display: flex;
   justify-content: center;
 }
-
-.text {
+.container .midle .text {
   font-size: 0.6rem;
   margin: 5px;
 }
-
-.fa-github {
+.container .midle a {
+  color: black;
+}
+.container .midle a .fa-github {
   margin: 3px;
   cursor: pointer;
+  transition: 500ms;
 }
-
-.fa-github:hover {
-  color: #feffdf;
-}
-
-.first-color { 
-	background: #feffdf; 
-}
-	
-.second-color { 
-	background: #dde0ab; 
-}
-
-.third-color { 
-	background: #97cba9; 
-}
-
-.fourth-color { 
-	background: #668ba4; 
-}
+.container .midle a .fa-github:hover {
+  color: #3A9188;
+}/*# sourceMappingURL=footer.css.map */

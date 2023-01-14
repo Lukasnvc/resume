@@ -1,36 +1,34 @@
 .nav-container {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  top: 0;
   display: flex;
   justify-content: space-between;
+  background-color: #062925;
 }
-
-.tabs {
+.nav-container .logo {
+  font-size: 1.2rem;
+  padding: 7px;
+  margin-left: 5px;
+  color: #B8E1DD;
+}
+.nav-container .logo .logo-text {
+  margin-left: 1px;
+  font-size: 0.5rem;
+}
+.nav-container .tabs {
   display: flex;
-  
 }
-
-
-.tab {
+.nav-container .tabs .tab {
   padding: 10px 20px;
   cursor: pointer;
+  transition: 500ms;
+  color: #B8E1DD;
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
 }
-
-.tab:hover {
-  background-color: #feffdf;
-}
-
-
-.first-color { 
-	background: #feffdf; 
-}
-	
-.second-color { 
-	background: #dde0ab; 
-}
-
-.third-color { 
-	background: #97cba9; 
-}
-
-.fourth-color { 
-	background: #668ba4; 
-}
+.nav-container .tabs .tab:hover {
+  background-color: #044A42;
+  color: #F9CC7B;
+}/*# sourceMappingURL=navBar.css.map */

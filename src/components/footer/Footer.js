@@ -3,10 +3,10 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="container fourth-color">
+    <div className="container">
       <div className="midle">
         <span className="text">2023 by Lukas</span>
-        <a href="">
+        <a target="blank" href="https://github.com/Lukasnvc">
           <i class="fa-brands fa-github"></i>
         </a>
       </div>

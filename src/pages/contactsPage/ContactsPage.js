@@ -7,6 +7,7 @@ const ContactsPage = () => {
     <div>
       <NavBar />
       <h1>Contacts Page</h1>
+
       <Footer />
     </div>
   );

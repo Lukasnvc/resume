@@ -1,0 +1,32 @@
+.container {
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .midle {
+
+  .text {
+      font-size: 0.6rem;
+      margin: 5px;
+    }
+
+    a {
+    color: black;
+    
+    .fa-github {
+      margin: 3px;
+      cursor: pointer;
+      transition: 500ms;
+      
+      &:hover {
+        color: #3A9188;
+      }
+      }
+    }
+  }
+}
+
+
+
