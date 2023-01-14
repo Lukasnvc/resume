@@ -29,14 +29,17 @@
   padding: 10px 20px;
   cursor: pointer;
   transition: 500ms;
-  color: #B8E1DD;
-  font-family: "VT323", monospace;
-  font-size: 1.2rem;
 }
 @media screen and (max-width: 480px) {
   .nav-container .tabs .tab {
     padding: 10px 15px;
   }
+}
+.nav-container .tabs .tab .link {
+  text-decoration: none;
+  color: #B8E1DD;
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
 }
 .nav-container .tabs .tab:hover {
   background-color: #044A42;

@@ -1,14 +1,11 @@
 import React from "react";
 import "./skillsPage.css";
-import NavBar from "../../components/navBar/NavBar";
-import Footer from "../../components/footer/Footer";
 import Skills from "../../components/skills/Skills";
 
 const SkillsPage = () => {
   return (
     <>
       <div className="main-container">
-        <NavBar />
         <div className="left">
           {" "}
           <div className="skills">
@@ -77,8 +74,6 @@ const SkillsPage = () => {
             </li>
           </ul>
         </div>
-
-        <Footer />
       </div>
     </>
   );

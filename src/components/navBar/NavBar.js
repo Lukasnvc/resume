@@ -1,9 +1,8 @@
 import React from "react";
 import "./navBar.css";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  const navigate = useNavigate();
   return (
     <div className="nav-container">
       <div className="logo">
@@ -11,20 +10,30 @@ const NavBar = () => {
         <span className="logo-text">CreatedbyLukas</span>
       </div>
       <div className="tabs">
-        <div onClick={() => navigate("/")} className="tab">
-          Home
+        <div className="tab">
+          <Link className="link" to="/">
+            Home
+          </Link>
         </div>
-        <div onClick={() => navigate("/about")} className="tab">
-          About
+        <div className="tab">
+          <Link className="link" to="/about">
+            About
+          </Link>
         </div>
-        <div onClick={() => navigate("/skills")} className="tab">
-          Skills
+        <div className="tab">
+          <Link className="link" to="/skills">
+            Skills
+          </Link>
         </div>
-        <div onClick={() => navigate("/portfolio")} className="tab">
-          Portfolio
+        <div className="tab">
+          <Link className="link" to="/portfolio">
+            Portfolio
+          </Link>
         </div>
-        <div onClick={() => navigate("/contacts")} className="tab">
-          Contacts
+        <div className="tab">
+          <Link className="link" to="/contacts">
+            Contacts
+          </Link>
         </div>
       </div>
     </div>
