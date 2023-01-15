@@ -18,34 +18,36 @@
 
     .logo-text {
       margin-left: 1px;
-      font-size: 0.5rem;
+      font-size: 0.4rem;
     }
   }
 
   .tabs {
     display: flex;
-    
-    .tab {
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: 500ms;
-      
-        @media screen and (max-width: 480px) {
-        padding: 10px 15px;
-        }
 
-      .link {
-        text-decoration: none;
-        color: #B8E1DD;
-        font-family: 'VT323', monospace;
+    .link {
+      text-decoration: none;
+      color: #B8E1DD;
+      font-family: 'VT323', monospace;
       font-size: 1.2rem;
+   
+    
+      .tab {
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: 500ms;
+        
+          @media screen and (max-width: 480px) {
+          padding: 10px 10px;
+          }
+      }
+      .tab:hover {
+        background-color: #044A42;
+        color: #F9CC7B;
       }
     }
     
-    .tab:hover {
-      background-color: #044A42;
-      color: #F9CC7B;
-    }
+    
   }
 }
 

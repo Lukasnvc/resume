@@ -1,10 +1,10 @@
 import pic from "../../IMG_4886.JPG";
-import "./home.css";
+import "./home.scss";
 
 const HomePage = () => {
   return (
     <div className="main-container">
-      <div className="about-container">
+      <div className="home-container">
         <div className="top">
           <h1>Lukas Novickas</h1>
         </div>

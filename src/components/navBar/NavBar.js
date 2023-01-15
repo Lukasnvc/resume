@@ -10,31 +10,21 @@ const NavBar = () => {
         <span className="logo-text">CreatedbyLukas</span>
       </div>
       <div className="tabs">
-        <div className="tab">
-          <Link className="link" to="/">
-            Home
-          </Link>
-        </div>
-        <div className="tab">
-          <Link className="link" to="/about">
-            About
-          </Link>
-        </div>
-        <div className="tab">
-          <Link className="link" to="/skills">
-            Skills
-          </Link>
-        </div>
-        <div className="tab">
-          <Link className="link" to="/portfolio">
-            Portfolio
-          </Link>
-        </div>
-        <div className="tab">
-          <Link className="link" to="/contacts">
-            Contacts
-          </Link>
-        </div>
+        <Link className="link" to="/">
+          <div className="tab">Home</div>
+        </Link>
+        <Link className="link" to="/education">
+          <div className="tab">Education</div>
+        </Link>
+        <Link className="link" to="/skills">
+          <div className="tab">Skills</div>
+        </Link>
+        <Link className="link" to="/portfolio">
+          <div className="tab">Portfolio</div>
+        </Link>
+        <Link className="link" to="/contacts">
+          <div className="tab">Contacts</div>
+        </Link>
       </div>
     </div>
   );

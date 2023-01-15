@@ -1,0 +1,41 @@
+.item-about {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 50px;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+@media screen and (max-width: 730px) {
+  .item-about {
+    gap: 30px;
+  }
+}
+.item-about .year {
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+}
+.item-about .right-about {
+  display: flex;
+  flex-direction: column;
+}
+.item-about .right-about .title-about {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 10px auto;
+}
+@media screen and (max-width: 730px) {
+  .item-about .right-about .title-about {
+    font-size: 1.2rem;
+  }
+}
+.item-about .right-about .subtitle-about {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 10px auto;
+}
+@media screen and (max-width: 730px) {
+  .item-about .right-about .subtitle-about {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=education.css.map */

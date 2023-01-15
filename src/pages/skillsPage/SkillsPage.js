@@ -1,5 +1,5 @@
 import React from "react";
-import "./skillsPage.css";
+import "./skillsPage.scss";
 import Skills from "../../components/skills/Skills";
 
 const SkillsPage = () => {

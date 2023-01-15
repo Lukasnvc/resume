@@ -20,28 +20,28 @@
 }
 .nav-container .logo .logo-text {
   margin-left: 1px;
-  font-size: 0.5rem;
+  font-size: 0.4rem;
 }
 .nav-container .tabs {
   display: flex;
 }
-.nav-container .tabs .tab {
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: 500ms;
-}
-@media screen and (max-width: 480px) {
-  .nav-container .tabs .tab {
-    padding: 10px 15px;
-  }
-}
-.nav-container .tabs .tab .link {
+.nav-container .tabs .link {
   text-decoration: none;
   color: #B8E1DD;
   font-family: "VT323", monospace;
   font-size: 1.2rem;
 }
-.nav-container .tabs .tab:hover {
+.nav-container .tabs .link .tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 500ms;
+}
+@media screen and (max-width: 480px) {
+  .nav-container .tabs .link .tab {
+    padding: 10px 10px;
+  }
+}
+.nav-container .tabs .link .tab:hover {
   background-color: #044A42;
   color: #F9CC7B;
 }/*# sourceMappingURL=navBar.css.map */

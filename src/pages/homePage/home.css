@@ -1,7 +1,7 @@
 .main-container {
   position: relative;
 }
-.main-container .about-container {
+.main-container .home-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   width: 100vw;
   align-items: center;
 }
-.main-container .about-container .top {
+.main-container .home-container .top {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,12 +17,12 @@
   width: 100%;
   background-color: #126258;
 }
-.main-container .about-container .top h1 {
+.main-container .home-container .top h1 {
   font-family: "VT323", monospace;
   font-size: 3rem;
   color: #B8E1DD;
 }
-.main-container .about-container .bottom {
+.main-container .home-container .bottom {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,11 +30,11 @@
   width: 100%;
   background-color: #B8E1DD;
 }
-.main-container .about-container .bottom h2 {
+.main-container .home-container .bottom h2 {
   font-family: "VT323", monospace;
   color: #126258;
 }
-.main-container .about-container .avatar {
+.main-container .home-container .avatar {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
