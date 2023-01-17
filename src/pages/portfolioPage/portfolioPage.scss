@@ -1,2 +1,22 @@
+.portfolio-container {
+  height: 100vh;
+  background-color: #126258;
+  font-family: 'VT323', monospace;
 
+  .title {
+    padding: 40px 0 10px 0;
+    text-align: center;
+    color: #97cba8;
+    font-size: 3rem;
+  }
+  .top-portfolio {
+    background-color: #B8E1DD;
+    color: #126258;
+    
+  }
+  .bottom-portfolio {
+    background-color: #126258;
+    color: #B8E1DD;
+  }
+}
             

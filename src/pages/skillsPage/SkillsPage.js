@@ -11,37 +11,37 @@ const SkillsPage = () => {
           <div className="skills">
             <h2 className="title">Programming languages</h2>
             <Skills
-              itag={<i class="fa-brands fa-html5"></i>}
+              itag={<i className="fa-brands fa-html5"></i>}
               level={"Itermediate"}
               star={3}
             />
             <Skills
-              itag={<i class="fa-brands fa-css3-alt"></i>}
+              itag={<i className="fa-brands fa-css3-alt"></i>}
               level={"Itermediate"}
               star={3}
             />
             <Skills
-              itag={<i class="fa-brands fa-sass"></i>}
+              itag={<i className="fa-brands fa-sass"></i>}
               level={"Itermediate"}
               star={3}
             />
             <Skills
-              itag={<i class="fa-brands fa-js"></i>}
+              itag={<i className="fa-brands fa-js"></i>}
               level={"Itermediate"}
               star={3}
             />
             <Skills
-              itag={<i class="fa-brands fa-bootstrap"></i>}
+              itag={<i className="fa-brands fa-bootstrap"></i>}
               level={"Beginner"}
               star={2}
             />
             <Skills
-              itag={<i class="fa-brands fa-node"></i>}
+              itag={<i className="fa-brands fa-node"></i>}
               level={"Beginner"}
               star={2}
             />
             <Skills
-              itag={<i class="fa-brands fa-react"></i>}
+              itag={<i className="fa-brands fa-react"></i>}
               level={"Beginner"}
               star={2}
             />

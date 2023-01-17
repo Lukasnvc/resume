@@ -6,61 +6,61 @@ const Skills = ({ itag, level, star }) => {
     if (+star === 1) {
       return (
         <div className="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
         </div>
       );
     } else if (+star === 2) {
       return (
         <div className="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
         </div>
       );
     } else if (+star === 3) {
       return (
         <div className="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
         </div>
       );
     } else if (+star === 4) {
       return (
         <div className="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-regular fa-star"></i>
         </div>
       );
     } else if (+star === 5) {
       return (
         <div className="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
         </div>
       );
     } else {
       return (
         <div className="stars">
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i>
         </div>
       );
     }

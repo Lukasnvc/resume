@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div className="nav-container">
       <div className="logo">
-        <i class="fa-solid fa-dice-d20"></i>
+        <i className="fa-solid fa-dice-d20"></i>
         <span className="logo-text">CreatedbyLukas</span>
       </div>
       <div className="tabs">

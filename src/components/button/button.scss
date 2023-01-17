@@ -1,0 +1,18 @@
+.btn {
+  font-family: 'VT323', monospace;
+  color: #B8E1DD;
+  font-size: 1.2rem;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  margin: 0;
+  
+  transition: 300ms;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgba(175, 166, 39, 0.56) 0px 22px 70px 4px;
+    color: #F9CC7B;
+  }
+}

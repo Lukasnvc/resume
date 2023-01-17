@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="midle">
         <span className="text">2023 by Lukas</span>
         <a target="blank" href="https://github.com/Lukasnvc">
-          <i class="fa-brands fa-github"></i>
+          <i className="fa-brands fa-github"></i>
         </a>
       </div>
     </div>
