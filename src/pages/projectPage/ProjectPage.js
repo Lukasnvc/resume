@@ -24,6 +24,7 @@ const ProjectEcommerse = () => {
                 <i class="fa-solid fa-code-branch"></i>
               </a>
             </p>
+            <p>Days on project: {item.time}</p>
           </div>
         </div>
       ))}

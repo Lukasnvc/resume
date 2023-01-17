@@ -26,6 +26,7 @@ export const Arr = [
     title: "ECOMMERCE WEBSITE",
     subtitle: "Languages used: HTML, SASS, JavaScript, API",
     git: "https://github.com/Lukasnvc/NewEshop.git",
+    time: 7,
     pic: [
       ecpic1,
       ecpic2,
@@ -47,6 +48,7 @@ export const Arr = [
     title: "Copy eShop design",
     subtitle: "Languages used: HTML, SASS, JavaScript",
     git: "https://github.com/Lukasnvc/homeWork.git",
+    time: 1,
     pic: [cpic1, cpic2, cpic3, cpic4, cpic5, cpic6, cpic7, cpic8],
   },
 ];
