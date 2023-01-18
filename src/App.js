@@ -7,7 +7,6 @@ import SkillsPage from "./pages/skillsPage/SkillsPage";
 import PortfolioPage from "./pages/portfolioPage/PortfolioPage";
 import NavBar from "./components/navBar/NavBar";
 import Footer from "./components/footer/Footer";
-import NotFound from "./pages/notFounPage/NotFound";
 import ProjectPage from "./pages/projectPage/ProjectPage";
 
 function App() {
