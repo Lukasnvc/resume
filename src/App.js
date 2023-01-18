@@ -23,7 +23,6 @@ function App() {
         <Route path="/portfolio/:id" element={<ProjectPage />}></Route>
 
         <Route path="/contacts" element={<ContactsPage />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
     </>
