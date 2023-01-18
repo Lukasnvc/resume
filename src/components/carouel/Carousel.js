@@ -16,12 +16,12 @@ const Carousel = ({ pictures }) => {
           <i class="fa-solid fa-chevron-left"></i>
         </div>
         <div className="carousel-center"></div>
-        <div className="carousel-right">
-          <i
-            class="fa-solid fa-chevron-right"
-            onClick={() => {
-              currImg < pictures.length - 1 && setCurrImg(currImg + 1);
-            }}></i>
+        <div
+          className="carousel-right"
+          onClick={() => {
+            currImg < pictures.length - 1 && setCurrImg(currImg + 1);
+          }}>
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
       </div>
     </div>
