@@ -1,11 +1,49 @@
-import "./educationPage.scss";
 import Education from "../../components/education/Education";
+import styled from "styled-components";
+
+const EducationContainer = styled.div`
+  font-family: "VT323", monospace;
+  width: 100vw;
+  display: flex;
+  @media screen and (max-width: 730px) {
+    flex-direction: column;
+  }
+`;
+
+const EducationLeft = styled.div`
+  height: 100vh;
+  flex: 1;
+  padding: 50px 40px 0 40px;
+  color: #b8e1dd;
+  background-color: #106258;
+
+  @media screen and (max-width: 730px) {
+    padding: 50px 10px 0 10px;
+  }
+`;
+
+const Title = styled.h1`
+  text-align: center;
+  margin: 50px;
+  font-size: 3rem;
+`;
+
+const EducationRight = styled.div`
+  flex: 1;
+  height: 100vh;
+  padding: 50px 40px 0 40px;
+  color: #106258;
+  background-color: #b8e1dd;
+  @media screen and (max-width: 730px) {
+    padding: 50px 20px 0 20px;
+  }
+`;
 
 const EducationPage = () => {
   return (
-    <div className="education-container">
-      <div className="education-left">
-        <h1>Education</h1>
+    <EducationContainer>
+      <EducationLeft>
+        <Title>Education</Title>
         <Education
           yearFrom={2022}
           yearTo={2023}
@@ -30,9 +68,9 @@ const EducationPage = () => {
           title={"Vytautas Magnus University"}
           subtitle={"Public Administration, Bachelor's degree"}
         />
-      </div>
-      <div className="education-right">
-        <h1>Experience</h1>
+      </EducationLeft>
+      <EducationRight>
+        <Title>Experience</Title>
         <Education
           yearFrom={2019}
           title={"Director Of Business Development"}
@@ -62,8 +100,8 @@ const EducationPage = () => {
           title={"Sales Manager"}
           subtitle={'UAB "Dagis"'}
         />
-      </div>
-    </div>
+      </EducationRight>
+    </EducationContainer>
   );
 };
 

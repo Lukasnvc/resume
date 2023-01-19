@@ -1,16 +1,22 @@
-import "./education.scss";
+import {
+  ItemAbout,
+  Year,
+  RightAbout,
+  TitleAbout,
+  SubtitleAbout,
+} from "./educationStyleComponents";
 
 const Education = ({ yearFrom, yearTo = "Present", title, subtitle }) => {
   return (
-    <div className="item-about">
-      <span className="year">
+    <ItemAbout>
+      <Year>
         {yearFrom} - {yearTo}
-      </span>
-      <div className="right-about">
-        <h4 className="title-about">{title}</h4>
-        <p className="subtitle-about">{subtitle}</p>
-      </div>
-    </div>
+      </Year>
+      <RightAbout>
+        <TitleAbout>{title}</TitleAbout>
+        <SubtitleAbout>{subtitle}</SubtitleAbout>
+      </RightAbout>
+    </ItemAbout>
   );
 };
 

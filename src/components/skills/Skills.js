@@ -1,77 +1,96 @@
-import React from "react";
-import "./skills.css";
+import styled from "styled-components";
+import { BsStarFill, BsStar } from "react-icons/bs";
+
+const Skillitem = styled.div`
+  width: 340px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+`;
+
+const Level = styled.span`
+  margin-left: 10px;
+  font-family: "VT323", monospace;
+  color: #b8e1dd;
+`;
+
+const Stars = styled.div`
+  color: #b8e1dd;
+`;
 
 const Skills = ({ itag, level, star }) => {
   const filter = (star) => {
     if (+star === 1) {
       return (
-        <div className="stars">
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-        </div>
+        <Stars>
+          <BsStarFill />
+          <BsStar />
+          <BsStar />
+          <BsStar />
+          <BsStar />
+        </Stars>
       );
     } else if (+star === 2) {
       return (
-        <div className="stars">
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-        </div>
+        <Stars>
+          <BsStarFill />
+          <BsStarFill />
+          <BsStar />
+          <BsStar />
+          <BsStar />
+        </Stars>
       );
     } else if (+star === 3) {
       return (
-        <div className="stars">
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-        </div>
+        <Stars>
+          <BsStarFill />
+          <BsStarFill />
+          <BsStarFill />
+          <BsStar />
+          <BsStar />
+        </Stars>
       );
     } else if (+star === 4) {
       return (
-        <div className="stars">
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-        </div>
+        <Stars>
+          <BsStarFill />
+          <BsStarFill />
+          <BsStarFill />
+          <BsStarFill />
+          <BsStar />
+        </Stars>
       );
     } else if (+star === 5) {
       return (
-        <div className="stars">
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-        </div>
+        <Stars>
+          <BsStarFill />
+          <BsStarFill />
+          <BsStarFill />
+          <BsStarFill />
+          <BsStarFill />
+        </Stars>
       );
     } else {
       return (
-        <div className="stars">
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-        </div>
+        <Stars>
+          <BsStar />
+          <BsStar />
+          <BsStar />
+          <BsStar />
+          <BsStar />
+        </Stars>
       );
     }
   };
 
   return (
-    <div className="skill-item">
+    <Skillitem>
       {itag}
-      <span>{level}</span>
-      <div className="stars">{filter(star)}</div>
-    </div>
+      <Level>{level}</Level>
+      <Stars>{filter(star)}</Stars>
+    </Skillitem>
   );
 };
 

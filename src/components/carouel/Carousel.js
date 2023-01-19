@@ -1,30 +1,34 @@
 import { useState } from "react";
-import "./carousel.scss";
+import {
+  CarouselContainer,
+  CarouselInner,
+  CarouseSides,
+  CarouselCenter,
+} from "./carouselStyledComponents";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 const Carousel = ({ pictures }) => {
   const [currImg, setCurrImg] = useState(0);
   return (
-    <div className="carousel">
-      <div
-        className="carousel-inner"
-        style={{ backgroundImage: `url(${pictures[currImg]})` }}>
-        <div
-          className="carousel-left"
+    <CarouselContainer>
+      <CarouselInner style={{ backgroundImage: `url(${pictures[currImg]})` }}>
+        <CarouseSides
           onClick={() => {
             currImg > 0 && setCurrImg(currImg - 1);
           }}>
-          <i class="fa-solid fa-chevron-left"></i>
-        </div>
-        <div className="carousel-center"></div>
-        <div
-          className="carousel-right"
+          <SlArrowLeft />
+        </CarouseSides>
+
+        <CarouselCenter></CarouselCenter>
+        <CarouseSides
           onClick={() => {
             currImg < pictures.length - 1 && setCurrImg(currImg + 1);
           }}>
-          <i class="fa-solid fa-chevron-right"></i>
-        </div>
-      </div>
-    </div>
+          {" "}
+          <SlArrowRight />
+        </CarouseSides>
+      </CarouselInner>
+    </CarouselContainer>
   );
 };
 

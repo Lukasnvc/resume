@@ -1,67 +1,102 @@
-import React from "react";
-import "./skillsPage.scss";
+import {
+  Main,
+  Left,
+  Title,
+  SkillsContainer,
+  Right,
+  TitleDetail,
+  UnorderedList,
+  ListItem,
+  ListSpan,
+  ListPar,
+} from "./skillsPageStyledComponents";
 import Skills from "../../components/skills/Skills";
+import { ImHtmlFive2 } from "react-icons/im";
+import {
+  SiCsswizardry,
+  SiJavascript,
+  SiReact,
+  SiStyledcomponents,
+} from "react-icons/si";
+import { FaSass, FaBootstrap, FaNodeJs } from "react-icons/fa";
 
 const SkillsPage = () => {
   return (
     <>
-      <div className="main-container">
-        <div className="left">
-          {" "}
-          <div className="skills">
-            <h2 className="title">Programming languages</h2>
+      <Main>
+        <Left>
+          <SkillsContainer>
+            <Title>Programming languages</Title>
             <Skills
-              itag={<i className="fa-brands fa-html5"></i>}
+              itag={
+                <ImHtmlFive2 style={{ fontSize: "3rem", color: "#97cba9" }} />
+              }
               level={"Itermediate"}
               star={3}
             />
-            <Skills
-              itag={<i className="fa-brands fa-css3-alt"></i>}
-              level={"Itermediate"}
-              star={3}
-            />
-            <Skills
-              itag={<i className="fa-brands fa-sass"></i>}
-              level={"Itermediate"}
-              star={3}
-            />
-            <Skills
-              itag={<i className="fa-brands fa-js"></i>}
-              level={"Itermediate"}
-              star={3}
-            />
-            <Skills
-              itag={<i className="fa-brands fa-bootstrap"></i>}
-              level={"Beginner"}
-              star={2}
-            />
-            <Skills
-              itag={<i className="fa-brands fa-node"></i>}
-              level={"Beginner"}
-              star={2}
-            />
-            <Skills
-              itag={<i className="fa-brands fa-react"></i>}
-              level={"Beginner"}
-              star={2}
-            />
-          </div>
-        </div>
 
-        <div className="right">
-          <h1 className="title-detail">Programming journey</h1>
-          <ul>
-            <li>
-              <span>2022 summer</span>
-              <p>
+            <Skills
+              itag={
+                <SiCsswizardry style={{ fontSize: "3rem", color: "#97cba9" }} />
+              }
+              level={"Itermediate"}
+              star={3}
+            />
+            <Skills
+              itag={<FaSass style={{ fontSize: "3rem", color: "#97cba9" }} />}
+              level={"Itermediate"}
+              star={3}
+            />
+            <Skills
+              itag={
+                <SiJavascript style={{ fontSize: "3rem", color: "#97cba9" }} />
+              }
+              level={"Itermediate"}
+              star={3}
+            />
+            <Skills
+              itag={
+                <FaBootstrap style={{ fontSize: "3rem", color: "#97cba9" }} />
+              }
+              level={"Beginner"}
+              star={2}
+            />
+            <Skills
+              itag={<FaNodeJs style={{ fontSize: "3rem", color: "#97cba9" }} />}
+              level={"Beginner"}
+              star={2}
+            />
+            <Skills
+              itag={<SiReact style={{ fontSize: "3rem", color: "#97cba9" }} />}
+              level={"Beginner"}
+              star={2}
+            />
+            <Skills
+              itag={
+                <SiStyledcomponents
+                  style={{ fontSize: "3rem", color: "#97cba9" }}
+                />
+              }
+              level={"Itermediate"}
+              star={3}
+            />
+          </SkillsContainer>
+        </Left>
+
+        <Right>
+          <TitleDetail>Programming journey</TitleDetail>
+          <UnorderedList>
+            <ListItem>
+              <ListSpan>2022 summer</ListSpan>
+              <ListPar>
                 Started learning Programming basics CSS, HTML, JavaScript
                 reading developer.mozilla.org, w3schools documentations and
                 doing toturials, thats where I got hooked up.
-              </p>
-            </li>
-            <li>
-              <span>2022 autumn</span>
-              <p>
+              </ListPar>
+            </ListItem>
+            <ListItem>
+              <ListSpan>2022 autumn</ListSpan>
+              <ListPar>
                 Started CodeAcademy 7 month Front-End 1-2 level studies. Program
                 included: HTML, CSS, SCSS, JavaScript, intro to Git, Bootstrap,
                 NodeJs, intro to MongoDb and cherry on pie - React. Here I got
@@ -70,11 +105,11 @@ const SkillsPage = () => {
                 practical assignments as well as theory to clear everythig. So
                 here I got even more hooked up to progamming and spend even more
                 time doing toturials extra from studies.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
+              </ListPar>
+            </ListItem>
+          </UnorderedList>
+        </Right>
+      </Main>
     </>
   );
 };

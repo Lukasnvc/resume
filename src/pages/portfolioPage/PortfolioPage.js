@@ -1,13 +1,30 @@
-import React from "react";
-import "./portfolioPage.scss";
 import PortfolioCard from "../../components/portfolioCard/PortfolioCard";
 import { Arr } from "../../utils/arr";
+import styled from "styled-components";
+
+const PortfolioContainer = styled.div`
+  height: 100vh;
+  background-color: #126258;
+  font-family: "VT323", monospace;
+`;
+
+const Title = styled.h1`
+  padding: 40px 0 10px 0;
+  text-align: center;
+  color: #97cba8;
+  font-size: 3rem;
+`;
+
+const TopPortfolio = styled.div`
+  background-color: #b8e1dd;
+  color: #126258;
+`;
 
 const PortfolioPage = () => {
   return (
-    <div className="portfolio-container">
-      <h1 className="title">Projects</h1>
-      <div className="top-portfolio">
+    <PortfolioContainer>
+      <Title>Projects</Title>
+      <TopPortfolio>
         {Arr.map((item) => (
           <PortfolioCard
             key={Date.now() + item.id}
@@ -17,10 +34,8 @@ const PortfolioPage = () => {
             subtitle={item.subtitle}
           />
         ))}
-      </div>
-
-      <div className="bottom-portfolio"></div>
-    </div>
+      </TopPortfolio>
+    </PortfolioContainer>
   );
 };
 
