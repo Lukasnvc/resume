@@ -16,7 +16,7 @@ const NavBar = () => {
         <LogoText>CreatedbyLukas</LogoText>
       </LogoNav>
       <TabsNav>
-        <TabNav as={Link} to="/resume">
+        <TabNav as={Link} to="/">
           Home
         </TabNav>
         <TabNav as={Link} to="/education">
