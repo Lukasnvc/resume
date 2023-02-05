@@ -16,7 +16,7 @@ const ContactsPage = () => {
           action="https://getform.io/f/9de09819-6a67-474d-8106-2a6bf9a994e2">
           <input type="text" placeholder="Name" name="name" />
           <input type="email" placeholder="Email" name="email" />
-          <textarea name="message" rows="10" placeholder="Message"></textarea>
+          <textarea name="message" rows="5" placeholder="Message"></textarea>
           <button type="submit">Let's Collaborate</button>
         </form>
       </Bottom>
