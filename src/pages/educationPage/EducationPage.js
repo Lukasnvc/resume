@@ -1,45 +1,11 @@
 import Education from "../../components/education/Education";
 import styled from "styled-components";
-
-const EducationContainer = styled.div`
-  font-family: "VT323", monospace;
-  width: 100vw;
-  display: flex;
-  @media screen and (max-width: 730px) {
-    flex-direction: column;
-  }
-`;
-
-const EducationLeft = styled.div`
-  height: 100vh;
-  flex: 1;
-  padding: 50px 40px 0 40px;
-  color: #b8e1dd;
-  background-color: #106258;
-
-  @media screen and (max-width: 730px) {
-    padding: 50px 10px 0 10px;
-  }
-`;
-
-const Title = styled.h1`
-  text-align: center;
-  margin: 50px;
-  font-size: 3rem;
-`;
-
-const EducationRight = styled.div`
-  flex: 1;
-  height: 100vh;
-  padding: 50px 40px 0 40px;
-  color: #106258;
-  background-color: #b8e1dd;
-  @media screen and (max-width: 730px) {
-    padding: 50px 20px 0 20px;
-  }
-`;
+import { TabTitle } from "../../utils/generalFunctions";
+import { darkGreen, lightGreen } from "../../utils/colors";
+import { breakpoints } from "../../utils/breakpoints";
 
 const EducationPage = () => {
+  TabTitle("Education");
   return (
     <EducationContainer>
       <EducationLeft>
@@ -106,3 +72,41 @@ const EducationPage = () => {
 };
 
 export default EducationPage;
+
+const EducationContainer = styled.div`
+  font-family: "VT323", monospace;
+  width: 100vw;
+  display: flex;
+  @media screen and (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+  }
+`;
+
+const EducationLeft = styled.div`
+  height: 100vh;
+  flex: 1;
+  padding: 50px 40px 0 40px;
+  color: ${lightGreen};
+  background-color: ${darkGreen};
+
+  @media screen and (max-width: ${breakpoints.tablet}) {
+    padding: 50px 10px 0 10px;
+  }
+`;
+
+const Title = styled.h1`
+  text-align: center;
+  margin: 50px;
+  font-size: 3rem;
+`;
+
+const EducationRight = styled.div`
+  flex: 1;
+  height: 100vh;
+  padding: 50px 40px 0 40px;
+  color: ${darkGreen};
+  background-color: ${lightGreen};
+  @media screen and (max-width: ${breakpoints.tablet}) {
+    padding: 50px 20px 0 20px;
+  }
+`;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../utils/breakpoints";
 
 export const PortfCard = styled.div`
   font-family: "VT323", monospace;
@@ -6,7 +7,7 @@ export const PortfCard = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: ${breakpoints.tablet}) {
     flex-direction: column;
   }
 `;
@@ -15,7 +16,7 @@ export const CardTextRight = styled.div`
   flex: 2;
   margin: 50px;
   text-align: center;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: ${breakpoints.tablet}) {
     margin: 0 0 40px 0;
   }
 `;
@@ -25,7 +26,7 @@ export const CardTitle = styled.h3`
 `;
 
 export const CardSubtitle = styled.span`
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: ${breakpoints.tablet}) {
     margin-bottom: 30px;
   }
 `;
@@ -47,7 +48,7 @@ export const ImgOfCard = styled.img`
   padding: 0;
   margin: 50px 5%;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: ${breakpoints.tablet}) {
     margin: 20px 5% 10px 5%;
   }
 `;

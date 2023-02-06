@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { breakpoints } from "../../utils/breakpoints";
+import { darkGreen, lightGreen, turqGreen } from "../../utils/colors";
 
 export const Main = styled.div`
   display: flex;
@@ -6,7 +8,7 @@ export const Main = styled.div`
   height: 100vh;
   font-family: "VT323", monospace;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: ${breakpoints.tablet}) {
     flex-direction: column;
     align-items: center;
   }
@@ -15,17 +17,17 @@ export const Left = styled.div`
   display: flex;
   justify-content: center;
   align-items: stretch;
-  background-color: #126258;
+  background-color: ${darkGreen};
   width: 50vw;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: ${breakpoints.tablet}) {
     width: 100vw;
   }
 `;
 
 export const Title = styled.h2`
   text-align: center;
-  color: #97cba9;
+  color: ${turqGreen};
   font-weight: 400;
   font-size: 2rem;
   margin: 60px auto;
@@ -37,15 +39,15 @@ export const SkillsContainer = styled.div`
 `;
 
 export const Right = styled.div`
-  background-color: #b8e1dd;
-  color: #126258;
+  background-color: ${lightGreen};
+  color: ${darkGreen};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
   width: 50vw;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: ${breakpoints.tablet}) {
     width: 100vw;
     padding: 20px 0;
   }
@@ -60,7 +62,7 @@ export const UnorderedList = styled.ul`
   padding: 0;
   line-height: 1.5;
   margin: 0 70px;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: ${breakpoints.tablet}) {
     margin: 0 30px;
   }
 `;

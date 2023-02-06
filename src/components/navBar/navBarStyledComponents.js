@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { breakpoints } from "../../utils/breakpoints";
+import { amber, darkestGreen, lightGreen } from "../../utils/colors";
 
 export const NavContainer = styled.div`
   position: fixed;
@@ -7,14 +9,14 @@ export const NavContainer = styled.div`
   top: 0;
   display: flex;
   justify-content: space-between;
-  background-color: #062925;
+  background-color: ${darkestGreen};
 `;
 export const LogoNav = styled.div`
   font-size: 1.2rem;
   padding: 7px;
   margin-left: 5px;
-  color: #b8e1dd;
-  @media screen and (max-width: 530px) {
+  color: ${lightGreen};
+  @media screen and (max-width: 630px) {
     display: none;
   }
 `;
@@ -30,17 +32,17 @@ export const TabsNav = styled.div`
 
 export const TabNav = styled.div`
   text-decoration: none;
-  color: #b8e1dd;
+  color: ${lightGreen};
   font-family: "VT323", monospace;
   font-size: 1.2rem;
   padding: 10px 20px;
   cursor: pointer;
   transition: 500ms;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: ${breakpoints.mobile}) {
     padding: 10px 10px;
   }
   :hover {
     background-color: #044a42;
-    color: #f9cc7b;
+    color: ${amber};
   }
 `;

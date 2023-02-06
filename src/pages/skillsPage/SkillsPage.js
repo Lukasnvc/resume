@@ -19,8 +19,10 @@ import {
   SiStyledcomponents,
 } from "react-icons/si";
 import { FaSass, FaBootstrap, FaNodeJs } from "react-icons/fa";
+import { TabTitle } from "../../utils/generalFunctions";
 
 const SkillsPage = () => {
+  TabTitle("Skills");
   return (
     <>
       <Main>

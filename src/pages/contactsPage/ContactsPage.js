@@ -2,9 +2,12 @@ import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { CgPhone } from "react-icons/cg";
 import styled from "styled-components";
-import Button from "../../components/button/Button";
+import { TabTitle } from "../../utils/generalFunctions";
+import { amber, darkGreen, lightGreen } from "../../utils/colors";
+import { breakpoints } from "../../utils/breakpoints";
 
 const ContactsPage = () => {
+  TabTitle("Contacts");
   return (
     <ContactContainer>
       <Top>
@@ -55,7 +58,7 @@ const ContactContainer = styled.div`
 
 const Top = styled.div`
   flex: 1;
-  background-color: #126258;
+  background-color: ${darkGreen};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,8 +66,7 @@ const Top = styled.div`
 
 const Title = styled.h1`
   font-size: 2.5rem;
-
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: ${breakpoints.tablet}) {
     font-size: 1.7rem;
   }
 `;
@@ -74,7 +76,7 @@ const Bottom = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #b8e1dd;
+  background-color: ${lightGreen};
   form {
     display: flex;
     flex-direction: column;
@@ -85,7 +87,7 @@ const Bottom = styled.div`
       margin-bottom: 20px;
       padding: 5px;
       border: none;
-      color: #126258;
+      color: ${darkGreen};
       font-family: "VT323", monospace;
       font-size: 1.2rem;
       background-color: #e2f3f1;
@@ -94,8 +96,8 @@ const Bottom = styled.div`
 
     button {
       font-family: "VT323", monospace;
-      background-color: #126258;
-      color: #b8e1dd;
+      background-color: ${darkGreen};
+      color: ${lightGreen};
       font-size: 1.2rem;
       padding: 7px 25px;
       border: none;
@@ -107,10 +109,10 @@ const Bottom = styled.div`
       &:hover {
         cursor: pointer;
         box-shadow: rgba(175, 166, 39, 0.56) 0px 22px 70px 4px;
-        color: #f9cc7b;
+        color: ${amber};
       }
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: ${breakpoints.tablet}) {
       width: 350px;
     }
   }
@@ -118,15 +120,19 @@ const Bottom = styled.div`
 
 const ContactIcons = styled.div`
   position: absolute;
-  top: 43%;
+  top: 44%;
   bottom: 43%;
   left: 40%;
   right: 40%;
   margin: 0;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 700px) {
-    top: 45%;
+  @media screen and (max-width: ${breakpoints.tablet}) {
+    top: 47%;
+    bottom: 46%;
+  }
+  @media screen and (max-width: ${breakpoints.mobile}) {
+    top: 46%;
     bottom: 45%;
   }
 `;
@@ -139,8 +145,8 @@ const Icon = styled.a`
   color: black;
   transition: 400ms;
 
-  @media screen and (max-width: 700px) {
-    font-size: 4rem;
+  @media screen and (max-width: ${breakpoints.tablet}) {
+    font-size: 3.5rem;
     margin: 0 20px;
   }
 

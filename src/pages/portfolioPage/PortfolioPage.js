@@ -1,26 +1,11 @@
 import PortfolioCard from "../../components/portfolioCard/PortfolioCard";
 import { Arr } from "../../utils/arr";
 import styled from "styled-components";
-
-const PortfolioContainer = styled.div`
-  height: 100vh;
-  background-color: #126258;
-  font-family: "VT323", monospace;
-`;
-
-const Title = styled.h1`
-  padding: 40px 0 10px 0;
-  text-align: center;
-  color: #97cba8;
-  font-size: 3rem;
-`;
-
-const TopPortfolio = styled.div`
-  background-color: #b8e1dd;
-  color: #126258;
-`;
+import { TabTitle } from "../../utils/generalFunctions";
+import { darkGreen, lightGreen, turqGreen } from "../../utils/colors";
 
 const PortfolioPage = () => {
+  TabTitle("Portfolio");
   return (
     <PortfolioContainer>
       <Title>Projects</Title>
@@ -40,3 +25,21 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
+
+const PortfolioContainer = styled.div`
+  height: 100vh;
+  background-color: ${darkGreen};
+  font-family: "VT323", monospace;
+`;
+
+const Title = styled.h1`
+  padding: 40px 0 10px 0;
+  text-align: center;
+  color: ${turqGreen};
+  font-size: 3rem;
+`;
+
+const TopPortfolio = styled.div`
+  background-color: ${lightGreen};
+  color: ${darkGreen};
+`;

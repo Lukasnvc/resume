@@ -1,24 +1,6 @@
 import styled from "styled-components";
 import { BsStarFill, BsStar } from "react-icons/bs";
-
-const Skillitem = styled.div`
-  width: 340px;
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
-`;
-
-const Level = styled.span`
-  margin-left: 10px;
-  font-family: "VT323", monospace;
-  color: #b8e1dd;
-`;
-
-const Stars = styled.div`
-  color: #b8e1dd;
-`;
+import { lightGreen } from "../../utils/colors";
 
 const Skills = ({ itag, level, star }) => {
   const filter = (star) => {
@@ -95,3 +77,22 @@ const Skills = ({ itag, level, star }) => {
 };
 
 export default Skills;
+
+const Skillitem = styled.div`
+  width: 340px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+`;
+
+const Level = styled.span`
+  margin-left: 10px;
+  font-family: "VT323", monospace;
+  color: ${lightGreen};
+`;
+
+const Stars = styled.div`
+  color: ${lightGreen};
+`;

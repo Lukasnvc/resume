@@ -1,5 +1,19 @@
 import styled from "styled-components";
 import { BsGithub } from "react-icons/bs";
+import { turqGreen } from "../../utils/colors";
+
+const Footer = () => {
+  return (
+    <FooterContainer>
+      <TextAbout>2023 by Lukas</TextAbout>
+      <LinkGit href="https://github.com/Lukasnvc" target="blank">
+        <BsGithub />
+      </LinkGit>
+    </FooterContainer>
+  );
+};
+
+export default Footer;
 
 const FooterContainer = styled.div`
   position: fixed;
@@ -20,18 +34,6 @@ const LinkGit = styled.a`
   cursor: pointer;
   transition: 500ms;
   &:hover {
-    color: #3a9188;
+    color: ${turqGreen};
   }
 `;
-const Footer = () => {
-  return (
-    <FooterContainer>
-      <TextAbout>2023 by Lukas</TextAbout>
-      <LinkGit href="https://github.com/Lukasnvc" target="blank">
-        <BsGithub />
-      </LinkGit>
-    </FooterContainer>
-  );
-};
-
-export default Footer;

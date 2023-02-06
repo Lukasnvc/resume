@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { amber, lightGreen } from "../../utils/colors";
 export const CarouselContainer = styled.div`
   width: 100vw;
   height: 75vh;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  background-color: #b8e1dd;
+  background-color: ${lightGreen};
   padding-top: 5px;
-  padding - bottom: 5px;
+  padding-bottom: 5px;
 `;
 
 export const CarouselInner = styled.div`
@@ -28,7 +29,7 @@ export const CarouseSides = styled.div`
   cursor: pointer;
   font-size: 1.5rem;
   &:hover {
-    color: #f9cc7b;
+    color: ${amber};
   }
 `;
 
