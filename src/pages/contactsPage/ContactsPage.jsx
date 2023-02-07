@@ -5,23 +5,67 @@ import styled from "styled-components";
 import { TabTitle } from "../../utils/generalFunctions";
 import { amber, darkGreen, lightGreen } from "../../utils/colors";
 import { breakpoints } from "../../utils/breakpoints";
+import { Formik, Form, Field, ErrorMessage } from 'formik'
+import axios from 'axios'
 
 const ContactsPage = () => {
   TabTitle("Contacts");
+  const handleSubmit = (values, { resetForm }) => {
+    axios
+    .post("https://getform.io/f/4dc0720e-0751-4e5c-a467-e101cf462672", {
+      name: `${values.name}`,
+      email: `${values.email}`,
+      message: `${values.message}`
+    }, 
+    { headers: {'Accept': 'application/json'}})
+      .then(() => {
+        resetForm()
+      })
+      .catch(error => console.log(error))
+    
+  }
   return (
     <ContactContainer>
       <Top>
         <Title>Feel free to contact me &#9786;</Title>
       </Top>
       <Bottom>
-        <form
-          method="POST"
-          action="https://getform.io/f/9de09819-6a67-474d-8106-2a6bf9a994e2">
-          <input type="text" placeholder="Name" name="name" />
-          <input type="email" placeholder="Email" name="email" />
-          <textarea name="message" rows="5" placeholder="Message"></textarea>
-          <button type="submit">Let's Collaborate</button>
-        </form>
+        <Formik initialValues={{
+          name: '',
+          email: '',
+          message: ''
+        }}
+          validate={(values) => {
+            const errors = {}
+            
+            if (!values.name) {
+              errors.name = 'Name required'
+            }
+            if (!values.email) {
+              errors.email = 'Email required'
+            }else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+              errors.email = 'Invalid email address';
+            }
+
+            if (!values.message) {
+              errors.message = 'Message required'
+            } else if (values.message.length < 10) {
+              errors.message = 'Must be at least 10 characters';
+            }
+            return errors
+          }}
+          onSubmit={handleSubmit}
+        >
+          <Form>
+            <ErrorMessage name="name" component='span'/>
+            <Field type='text' name='name' placeholder='Name'/>
+            <ErrorMessage name="email" component='span'/>
+            <Field type='email' name='email' placeholder='Email'/>
+            <ErrorMessage name="message" component='span'/>
+            <Field as='textarea' type='text' name="message"       placeholder='Message ...'/>
+            <button type="submit" >Let's collaborate</button>
+          </Form>
+        </Formik>
       </Bottom>
       <ContactIcons>
         <Icon
@@ -94,6 +138,10 @@ const Bottom = styled.div`
       outline: none;
     }
 
+    span {
+    font-size: 1rem;
+    }
+
     button {
       font-family: "VT323", monospace;
       background-color: ${darkGreen};
@@ -117,6 +165,7 @@ const Bottom = styled.div`
     }
   }
 `;
+
 
 const ContactIcons = styled.div`
   position: absolute;
