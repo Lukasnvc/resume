@@ -5,6 +5,7 @@ import { darkGreen, turqGreen } from "../../utils/colors";
 import PorfolioWork from "../../components/portfolioCard/PorfolioWork";
 import cocktailWheel from '../../pictures/cocktailWheel.png'
 import eShop from '../../pictures/eShop.png'
+import portfolio from '../../pictures/portfolio.png'
 
 
 const PortfolioPage = () => {
@@ -17,7 +18,7 @@ const PortfolioPage = () => {
 
         <PorfolioWork name={"eShop"} link={"https://lukasnvc.github.io/NewEshop/"} code={"https://github.com/Lukasnvc/NewEshop.git"} pic={eShop} lang={'Java-script, Sass, api'} />
 
-        <PorfolioWork name={"Portfolio site"} link={"https://lukasnvc.github.io/NewEshop/"} code={"https://github.com/Lukasnvc/portfolio.git"} pic={eShop} lang={'React, Tailwind Css'} />
+        <PorfolioWork name={"Portfolio site"} link={"https://lukasnvc.github.io/portfolio/"} code={"https://github.com/Lukasnvc/portfolio.git"} pic={portfolio} lang={'React, Tailwind Css'} />
 
       </PortfolioGrid>
     </PortfolioContainer>
