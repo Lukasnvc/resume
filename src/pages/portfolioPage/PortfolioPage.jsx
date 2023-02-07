@@ -1,25 +1,25 @@
-import PortfolioCard from "../../components/portfolioCard/PortfolioCard";
-import { Arr } from "../../utils/arr";
+
 import styled from "styled-components";
 import { TabTitle } from "../../utils/generalFunctions";
-import { darkGreen, lightGreen, turqGreen } from "../../utils/colors";
+import { darkGreen, turqGreen } from "../../utils/colors";
+import PorfolioWork from "../../components/portfolioCard/PorfolioWork";
+import cocktailWheel from '../../pictures/cocktailWheel.png'
+import eShop from '../../pictures/eShop.png'
+
 
 const PortfolioPage = () => {
   TabTitle("Portfolio");
   return (
     <PortfolioContainer>
       <Title>Projects</Title>
-      <TopPortfolio>
-        {Arr.map((item) => (
-          <PortfolioCard
-            key={Date.now() + item.id}
-            id={item.id}
-            picture={item.pic[0]}
-            title={item.title}
-            subtitle={item.subtitle}
-          />
-        ))}
-      </TopPortfolio>
+      <PortfolioGrid>
+        <PorfolioWork name={"Cocktail page"} link={"https://lukasnvc.github.io/CocktailWheel/"} code={"https://github.com/Lukasnvc/CocktailWheel.git"} lang={'React, Styled-components, Java-script, api'} pic={cocktailWheel} />
+
+        <PorfolioWork name={"eShop"} link={"https://lukasnvc.github.io/NewEshop/"} code={"https://github.com/Lukasnvc/NewEshop.git"} pic={eShop} lang={'Java-script, Sass, api'} />
+
+        <PorfolioWork name={"Portfolio site"} link={"https://lukasnvc.github.io/NewEshop/"} code={"https://github.com/Lukasnvc/portfolio.git"} pic={eShop} lang={'React, Tailwind Css'} />
+
+      </PortfolioGrid>
     </PortfolioContainer>
   );
 };
@@ -39,7 +39,10 @@ const Title = styled.h1`
   font-size: 3rem;
 `;
 
-const TopPortfolio = styled.div`
-  background-color: ${lightGreen};
-  color: ${darkGreen};
-`;
+const PortfolioGrid = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: ${darkGreen};
+`
