@@ -3,9 +3,10 @@ import styled from "styled-components";
 import { TabTitle } from "../../utils/generalFunctions";
 import { darkGreen, turqGreen } from "../../utils/colors";
 import PorfolioWork from "../../components/portfolioCard/PorfolioWork";
-import cocktailWheel from '../../pictures/cocktailWheel.png'
-import eShop from '../../pictures/eShop.png'
-import portfolio from '../../pictures/portfolio.png'
+import cocktailWheel from '../../pictures/cocktailWheel.png';
+import eShop from '../../pictures/eShop.png';
+import portfolio from '../../pictures/portfolio.png';
+import smartCart from '../../pictures/smartCart.png';
 
 
 const PortfolioPage = () => {
@@ -14,7 +15,9 @@ const PortfolioPage = () => {
     <PortfolioContainer>
       <Title>Projects</Title>
       <PortfolioGrid>
-        <PorfolioWork name={"Cocktail page"} link={"https://lukasnvc.github.io/CocktailWheel/"} code={"https://github.com/Lukasnvc/CocktailWheel.git"} lang={'React, Styled-components, Java-script, api'} pic={cocktailWheel} />
+        <PorfolioWork name={"SmartCart"} link={"https://lukasnvc.github.io/smartcart/"} code={"https://github.com/Lukasnvc/smartcart.git"} pic={smartCart} lang={'React, Styled-components, api'} />
+        
+        <PorfolioWork name={"Cocktail page"} link={"https://lukasnvc.github.io/CocktailWheel/"} code={"https://github.com/Lukasnvc/CocktailWheel.git"} lang={'React, Styled-components, api'} pic={cocktailWheel} />
 
         <PorfolioWork name={"eShop"} link={"https://lukasnvc.github.io/NewEshop/"} code={"https://github.com/Lukasnvc/NewEshop.git"} pic={eShop} lang={'Java-script, Sass, api'} />
 
