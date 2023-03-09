@@ -1,13 +1,13 @@
-
-import styled from "styled-components";
-import { TabTitle } from "../../utils/generalFunctions";
 import { darkGreen, turqGreen } from "../../utils/colors";
+
 import PorfolioWork from "../../components/portfolioCard/PorfolioWork";
+import { TabTitle } from "../../utils/generalFunctions";
 import cocktailWheel from '../../pictures/cocktailWheel.png';
 import eShop from '../../pictures/eShop.png';
 import portfolio from '../../pictures/portfolio.png';
 import smartCart from '../../pictures/smartCart.png';
-
+import styled from "styled-components";
+import techJobs from '../../pictures/techJobs.png'
 
 const PortfolioPage = () => {
   TabTitle("Portfolio");
@@ -20,6 +20,8 @@ const PortfolioPage = () => {
         <PorfolioWork name={"Cocktail page"} link={"https://lukasnvc.github.io/CocktailWheel/"} code={"https://github.com/Lukasnvc/CocktailWheel.git"} lang={'React, Styled-components, api'} pic={cocktailWheel} />
 
         <PorfolioWork name={"eShop"} link={"https://lukasnvc.github.io/NewEshop/"} code={"https://github.com/Lukasnvc/NewEshop.git"} pic={eShop} lang={'Java-script, Sass, api'} />
+
+        <PorfolioWork name={"Job page"} link={"https://guodaar.github.io/typescript-testing/"} code={"https://github.com/guodaar/typescript-testing.git"} pic={techJobs} lang={'React, TypeScript, Styled-components, Git'} />
 
         <PorfolioWork name={"Portfolio site"} link={"https://lukasnvc.github.io/portfolio/"} code={"https://github.com/Lukasnvc/portfolio.git"} pic={portfolio} lang={'React, Tailwind Css'} />
 
