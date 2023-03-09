@@ -1,24 +1,28 @@
+import { FaBootstrap, FaNodeJs, FaSass } from "react-icons/fa";
 import {
-  Main,
   Left,
-  Title,
-  SkillsContainer,
+  ListItem,
+  ListPar,
+  ListSpan,
+  Main,
   Right,
+  SkillsContainer,
+  Title,
   TitleDetail,
   UnorderedList,
-  ListItem,
-  ListSpan,
-  ListPar,
 } from "./skillsPageStyledComponents";
-import Skills from "../../components/skills/Skills";
-import { ImHtmlFive2 } from "react-icons/im";
 import {
   SiCsswizardry,
+  SiGithub,
   SiJavascript,
   SiReact,
   SiStyledcomponents,
+  SiTailwindcss,
+  SiTypescript
 } from "react-icons/si";
-import { FaSass, FaBootstrap, FaNodeJs } from "react-icons/fa";
+
+import { ImHtmlFive2 } from "react-icons/im";
+import Skills from "../../components/skills/Skills";
 import { TabTitle } from "../../utils/generalFunctions";
 
 const SkillsPage = () => {
@@ -45,7 +49,7 @@ const SkillsPage = () => {
               star={3}
             />
             <Skills
-              itag={<FaSass style={{ fontSize: "3rem", color: "#97cba9" }} />}
+              itag={<SiReact style={{ fontSize: "3rem", color: "#97cba9" }} />}
               level={"Itermediate"}
               star={3}
             />
@@ -58,22 +62,17 @@ const SkillsPage = () => {
             />
             <Skills
               itag={
-                <FaBootstrap style={{ fontSize: "3rem", color: "#97cba9" }} />
+                <SiTypescript style={{ fontSize: "3rem", color: "#97cba9" }} />
               }
-              level={"Beginner"}
-              star={2}
+              level={"Itermediate"}
+              star={3}
             />
             <Skills
-              itag={<FaNodeJs style={{ fontSize: "3rem", color: "#97cba9" }} />}
-              level={"Beginner"}
-              star={2}
+              itag={<FaSass style={{ fontSize: "3rem", color: "#97cba9" }} />}
+              level={"Itermediate"}
+              star={3}
             />
-            <Skills
-              itag={<SiReact style={{ fontSize: "3rem", color: "#97cba9" }} />}
-              level={"Beginner"}
-              star={2}
-            />
-            <Skills
+             <Skills
               itag={
                 <SiStyledcomponents
                   style={{ fontSize: "3rem", color: "#97cba9" }}
@@ -81,6 +80,30 @@ const SkillsPage = () => {
               }
               level={"Itermediate"}
               star={3}
+            />
+             <Skills
+              itag={
+                <SiTailwindcss style={{ fontSize: "3rem", color: "#97cba9" }} />
+              }
+              level={"Beginner"}
+              star={2}
+            />
+            <Skills
+              itag={
+                <FaBootstrap style={{ fontSize: "3rem", color: "#97cba9" }} />
+              }
+              level={"Beginner"}
+              star={2}
+            />
+            <Skills
+              itag={<SiGithub style={{ fontSize: "3rem", color: "#97cba9" }} />}
+              level={"Beginner"}
+              star={2}
+            />
+            <Skills
+              itag={<FaNodeJs style={{ fontSize: "3rem", color: "#97cba9" }} />}
+              level={"Beginner"}
+              star={2}
             />
           </SkillsContainer>
         </Left>

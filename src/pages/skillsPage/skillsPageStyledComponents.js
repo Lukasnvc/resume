@@ -1,6 +1,7 @@
-import styled from "styled-components";
-import { breakpoints } from "../../utils/breakpoints";
 import { darkGreen, lightGreen, turqGreen } from "../../utils/colors";
+
+import { breakpoints } from "../../utils/breakpoints";
+import styled from "styled-components";
 
 export const Main = styled.div`
   display: flex;
@@ -36,6 +37,7 @@ export const Title = styled.h2`
 export const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 `;
 
 export const Right = styled.div`
