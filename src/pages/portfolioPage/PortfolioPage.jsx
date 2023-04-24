@@ -9,6 +9,7 @@ import quiz from '../../pictures/quiz.png'
 import smartCart from '../../pictures/smartCart.png';
 import styled from "styled-components";
 import techJobs from '../../pictures/techJobs.png'
+import travel from '../../pictures/travel.png'
 
 const PortfolioPage = () => {
   TabTitle("Portfolio");
@@ -19,6 +20,8 @@ const PortfolioPage = () => {
         <PorfolioWork name={"SmartCart"} link={"https://lukasnvc.github.io/smartcart/"} code={"https://github.com/Lukasnvc/smartcart.git"} pic={smartCart} lang={'React, Styled-components, api'} />
 
         <PorfolioWork name={"Quiz game"} link={"https://lukasnvc.github.io/quiz-app/"} code={"https://github.com/Lukasnvc/quiz-app.git"} pic={quiz} lang={'React, Styled-components, TypeScript, api'} />
+
+        <PorfolioWork name={"Travel agency"} link={"https://lukasnvc.github.io/travel-app/"} code={"https://github.com/Lukasnvc/travel-app.git"} pic={travel} lang={'React, Tailwind Css'} />
         
         <PorfolioWork name={"Cocktail page"} link={"https://lukasnvc.github.io/CocktailWheel/"} code={"https://github.com/Lukasnvc/CocktailWheel.git"} lang={'React, Styled-components, api'} pic={cocktailWheel} />
 
