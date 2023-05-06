@@ -22,7 +22,7 @@ const PortfolioPage = () => {
 
         <PorfolioWork name={"Quiz game"} link={"https://lukasnvc.github.io/quiz-app/"} code={"https://github.com/Lukasnvc/quiz-app.git"} pic={quiz} lang={'React, Styled-components, TypeScript, api'} />
 
-        <PorfolioWork name={"TripApp"} link={"https://expo.dev/@lukasnvc/trip-app?serviceType=classic&distribution=expo-go"} code={"https://github.com/Lukasnvc/trip-app-native.git"} pic={trip} lang={'React Natice, Tailwind, api'} />
+        <PorfolioWork name={"TripApp"} link={"https://expo.dev/@lukasnvc/trip-app?serviceType=classic&distribution=expo-go"} code={"https://github.com/Lukasnvc/trip-app-native.git"} pic={trip} lang={'React Native, Tailwind, api'} />
 
         <PorfolioWork name={"Travel agency"} link={"https://lukasnvc.github.io/travel-app/"} code={"https://github.com/Lukasnvc/travel-app.git"} pic={travel} lang={'React, Tailwind Css'} />
         
