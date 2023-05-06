@@ -10,6 +10,7 @@ import smartCart from '../../pictures/smartCart.png';
 import styled from "styled-components";
 import techJobs from '../../pictures/techJobs.png'
 import travel from '../../pictures/travel.png'
+import trip from '../../pictures/trip.png'
 
 const PortfolioPage = () => {
   TabTitle("Portfolio");
@@ -20,6 +21,8 @@ const PortfolioPage = () => {
         <PorfolioWork name={"SmartCart"} link={"https://lukasnvc.github.io/smartcart/"} code={"https://github.com/Lukasnvc/smartcart.git"} pic={smartCart} lang={'React, Styled-components, api'} />
 
         <PorfolioWork name={"Quiz game"} link={"https://lukasnvc.github.io/quiz-app/"} code={"https://github.com/Lukasnvc/quiz-app.git"} pic={quiz} lang={'React, Styled-components, TypeScript, api'} />
+
+        <PorfolioWork name={"TripApp"} link={"https://expo.dev/@lukasnvc/trip-app?serviceType=classic&distribution=expo-go"} code={"https://github.com/Lukasnvc/trip-app-native.git"} pic={trip} lang={'React Natice, Tailwind, api'} />
 
         <PorfolioWork name={"Travel agency"} link={"https://lukasnvc.github.io/travel-app/"} code={"https://github.com/Lukasnvc/travel-app.git"} pic={travel} lang={'React, Tailwind Css'} />
         
