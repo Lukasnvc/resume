@@ -5,6 +5,7 @@ import { TabTitle } from "../../utils/generalFunctions";
 import cocktailWheel from '../../pictures/cocktailWheel.png';
 import eShop from '../../pictures/eShop.png';
 import moviesApp from '../../pictures/movies-app.png';
+import pixy from '../../pictures/pixy.png';
 import portfolio from '../../pictures/portfolio.png';
 import quiz from '../../pictures/quiz.png'
 import smartCart from '../../pictures/smartCart.png';
@@ -19,6 +20,8 @@ const PortfolioPage = () => {
     <PortfolioContainer>
       <Title>Projects</Title>
       <PortfolioGrid>
+        <PorfolioWork name={"Pixy"} link={"https://lukasnvc.github.io/pixy-app/"} code={"https://github.com/Lukasnvc/pixy-app.git"} pic={pixy} lang={'React, Styled-components, api, TanStack Query'} />
+        
         <PorfolioWork name={"SmartCart"} link={"https://lukasnvc.github.io/smartcart/"} code={"https://github.com/Lukasnvc/smartcart.git"} pic={smartCart} lang={'React, Styled-components, api'} />
 
         <PorfolioWork name={"Quiz game"} link={"https://lukasnvc.github.io/quiz-app/"} code={"https://github.com/Lukasnvc/quiz-app.git"} pic={quiz} lang={'React, Styled-components, TypeScript, api'} />
